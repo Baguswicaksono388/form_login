@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "978915972493",
+    "firebase_url": "https://authentication-demo-addae.firebaseio.com",
+    "project_id": "authentication-demo-addae",
+    "storage_bucket": "authentication-demo-addae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978915972493:android:adb5aca2685ba8cef759c4",
+        "android_client_info": {
+          "package_name": "com.example.form_login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978915972493-t7337uol3posqqphuvl9sncb31bohcua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA-NG1GtZHr10VEmFYFIUhSxlTsnJTCq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978915972493-t7337uol3posqqphuvl9sncb31bohcua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
