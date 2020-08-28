@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:form_login/Screens/Login/login_screen.dart';
-import 'package:form_login/auth_services.dart';
+import 'package:form_login/Screens/Signup/signup_screen.dart';
 import 'package:form_login/component/rounded_button.dart';
 import 'package:form_login/constrant.dart';
 import 'background.dart';
@@ -36,15 +36,7 @@ class Body extends StatelessWidget {
             height: size.height * 0.03,
           ),
           RoundedButton(
-            text: "Sign In Anonymous",
-            press: () async {
-              await AuthServices.signInAnonymous();
-            },
-          ),
-          RoundedButton(
             text: "Login",
-            color: kPrimaryLightColor,
-            textColor: Colors.black,
             press: () {
               Navigator.push(
                 context,
@@ -55,7 +47,22 @@ class Body extends StatelessWidget {
                 ),
               );
             },
-          )
+          ),
+          RoundedButton(
+            text: "Sign Up",
+            color: kPrimaryLightColor,
+            textColor: Colors.black,
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return SignUpScreen();
+                  },
+                ),
+              );
+            },
+          ),
         ],
       ),
     ));
