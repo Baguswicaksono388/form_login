@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:form_login/Screens/Signup/signup_screen.dart';
 import 'package:form_login/auth_services.dart';
+import 'package:form_login/component/already_have_an_account_check.dart';
 import 'package:form_login/component/rounded_button.dart';
 import 'package:form_login/component/rounded_input_field.dart';
 import 'package:form_login/component/rounded_input_password.dart';
@@ -27,9 +29,15 @@ class Body extends StatelessWidget {
               "LOGIN",
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
+            SizedBox(
+              height: size.height * 0.03,
+            ),
             SvgPicture.asset(
               "assets/images/medical.svg",
               width: size.width * 0.35,
+            ),
+            SizedBox(
+              height: size.height * 0.03,
             ),
             RoundedInputField(
               hintText: "Your Email",
@@ -45,6 +53,21 @@ class Body extends StatelessWidget {
               press: () async {
                 AuthServices.signIn(
                     emailController.text, passwordController.text);
+              },
+            ),
+            SizedBox(
+              height: size.height * 0.03,
+            ),
+            AlreadyHaveAnAccountCheck(
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return SignUpScreen();
+                    },
+                  ),
+                );
               },
             )
           ],
