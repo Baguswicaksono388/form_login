@@ -9,9 +9,6 @@ class Background extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final TextEditingController emailController =
-        TextEditingController(text: "");
-    TextEditingController passwordController = TextEditingController(text: "");
     Size size = MediaQuery.of(context).size;
     return Container(
       height: size.height,
