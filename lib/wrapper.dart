@@ -11,6 +11,6 @@ class Wrapper extends StatelessWidget {
     FirebaseUser firebaseUser = Provider.of<FirebaseUser>(context);
     return (firebaseUser == null)
         ? WelcomeScreen()
-        : MainPage(firebaseUser); //ini adlh if else
+        : MainPage(); //ini adlh if else
   }
 }

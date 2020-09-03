@@ -12,7 +12,7 @@ class LoginScreen extends StatelessWidget {
         ? Scaffold(
             body: Body(),
           )
-        : MainPage(firebaseUser); //ini adlh if else
+        : MainPage(); //ini adlh if else
     // return Scaffold(
     //   body: Body(),
     // );

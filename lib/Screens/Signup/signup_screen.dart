@@ -12,6 +12,6 @@ class SignUpScreen extends StatelessWidget {
         ? Scaffold(
             body: Body(),
           )
-        : MainPage(firebaseUser);
+        : MainPage();
   }
 }
